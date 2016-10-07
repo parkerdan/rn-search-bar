@@ -1,6 +1,6 @@
 {
   "name": "rn-search-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react native search bar",
   "main": "SearchBar.js",
   "scripts": {

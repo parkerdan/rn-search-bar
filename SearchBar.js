@@ -35,9 +35,7 @@ export default class SearchBar extends Component {
  };
 
  pressedSearchIcon(){
-   if (this.state.textInput.length !== 0) {
-     this.props.onPress(this.state.textInput);
-   }
+   this.props.onPress(this.state.textInput);
    if (this.props.clearTextOnPress) {
      this.setState({ textInput: '' });
    }
