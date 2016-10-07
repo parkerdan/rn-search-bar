@@ -9,6 +9,10 @@
 * `react-native link react-native-vector-icons`
 * `npm install rn-search-bar --save`
 
+<br>
+![Example One](./SearchExTwo.png "Two Icons")
+
+![Example One](./SearchExOne.png "Two Icons")
 
 
 
@@ -16,7 +20,7 @@
 ```js
 import React, { Component } from 'react';
 
-import Header from 'rn-header';
+import SearchBar from 'rn-search-bar';
 
 class SearchBarExampleOne extends Component {
   render(){
@@ -26,7 +30,9 @@ class SearchBarExampleOne extends Component {
           () => console.log('Do Stuff')
         }
         containerStyle={{
-          height:50
+          height:50,
+          borderTopWidth:1,
+          borderBottomWidth:1
         }}
         clearTextOnPress={true}
         renderLeftIcon={true}
