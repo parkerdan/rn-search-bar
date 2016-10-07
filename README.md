@@ -27,7 +27,7 @@ class SearchBarExampleOne extends Component {
     return(
       <SearchBar
         onPress={
-          () => console.log('Do Stuff')
+          (text) => console.log('You typed + ' text)
         }
         containerStyle={{
           height:50,
@@ -53,7 +53,7 @@ class SearchBarExampleTwo extends Component {
     return(
       <SearchBar
         onPress={
-          () => console.log('Do Stuff')
+          (text) => console.log('You typed ' + text )
         }
         containerStyle={{
           height:50,
