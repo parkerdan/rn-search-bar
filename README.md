@@ -34,6 +34,7 @@ class SearchBarExampleOne extends Component {
           borderTopWidth:1,
           borderBottomWidth:1
         }}
+        renderSearchIcon={true}
         clearTextOnPress={true}
         renderLeftIcon={true}
         searchIconSize={15}
@@ -62,6 +63,7 @@ class SearchBarExampleTwo extends Component {
           borderColor: 'purple',
           borderWidth: 1
         }}
+        renderSearchIcon={true}
         clearTextOnPress={false}
         renderLeftIcon={false}
         searchIconSize={20}
