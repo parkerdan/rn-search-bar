@@ -12,7 +12,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 // 'onPress' will only be called only if there is a value in the text area, with value passed in
 
 const propTypes = {
-onPress: React.PropTypes.func.isRequired,
+onPress: React.PropTypes.func,
 containerStyle: React.PropTypes.object.isRequired,
 clearTextOnPress: React.PropTypes.bool,
 renderLeftIcon: React.PropTypes.bool,
@@ -23,6 +23,7 @@ leftIconColor: React.PropTypes.string,
 leftIconSize: React.PropTypes.number,
 textStyle: React.PropTypes.object,
 renderSearchIcon: React.PropTypes.bool,
+onChange: React.PropTypes.func,
 };
 
 export default class SearchBar extends Component {
@@ -91,7 +92,12 @@ render(){
           placeholder={'Search'}
           value={this.state.textInput}
           onChangeText={
-            (text) => this.setState({textInput:text})
+            (text) => {
+              this.setState({textInput:text});
+              if (this.props.onChange) {
+                this.props.onChange(text)
+              }
+            }
           }
           underlineColorAndroid={'rgba(0,0,0,0)'}
           style={[{
