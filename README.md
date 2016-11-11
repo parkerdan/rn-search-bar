@@ -33,10 +33,6 @@
 
 
 
-clearTextOnPress: React.PropTypes.bool,
-textStyle: React.PropTypes.object,
-
-
 ```js
 import React, { Component } from 'react';
 
