@@ -14,7 +14,27 @@
 
 ![Example One](./SearchExOne.png "Two Icons")
 
+### Props
 
+| Prop | Type | Description | Required |
+| ---  | ---  | ---         | ---      |
+| containerStyle | object | styles applied to the search bar container | **YES** |
+| onChange | function | function called when text input changes | **YES** |
+| textStyle | object | styles applied to the text input | no |
+| clearTextOnPress | boolean | clear the text when the search button is pressed | no |
+| renderLeftIcon | boolean | render the left side search icon | no |
+| leftIconColor | string | color of the left | no |
+| leftIconSize | number | size of the left icon | no |
+| renderSearchIcon | boolean | render the search icon on the right side which functions as a button | no |
+| searchIconSize | number | size of the search icon | no |
+| searchIconColor | string | color of the search icon | no |
+| searchIconBackgroundColor | string | backgroundColor for the search icon button | no |
+| onPress | function | function called when search icon button is pressed, called with text input | if search icon is rendered |
+
+
+
+clearTextOnPress: React.PropTypes.bool,
+textStyle: React.PropTypes.object,
 
 
 ```js
